@@ -1,0 +1,34 @@
+[project]
+name = "readmeai"
+version = "0.1.0"
+description = "AI-powered documentation generator for Python projects"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "GNU AFFERO GENERAL PUBLIC LICENSE"}
+authors = [
+  {name = "sbukkap", email = "shreekar.shredder2002@gmail.com"}
+]
+
+dependencies = [
+    "click",
+    "google-genai",
+    "pathspec>=1.0.3",
+    "pyyaml",
+    "rich",
+    "twine>=6.2.0",
+]
+
+[project.urls]
+Repository = "https://github.com/sbukkap/ReadmeAI"
+Issues = "https://github.com/sbukkap/ReadmeAI/issues"
+
+[project.scripts]
+readmeai = "readmeai.pipelines.supervisor:cli"
+
+[tool.setuptools]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["readmeai*"]
+
+[tool.setuptools.package-data]
+"readmeai" = ["resources/*.gitignore"]
