@@ -2,7 +2,6 @@
 
 **ReadmeAI** is an intelligent command-line tool that automates the process of documenting your software projects. By leveraging the power of **Google's Gemini LLMs**, ReadmeAI scans your codebase, understands the context of each file, and generates a comprehensive, professional `README.md` file.
 
-> **Note:** This project was formerly known as `doclify`.
 
 ## ✨ Key Features
 
